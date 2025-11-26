@@ -68,8 +68,6 @@ func LoggingMiddleware(next http.Handler) http.Handler {
 	})
 }
 
-// JSON is a simple helper used ONLY in examples.
-// It is NOT part of the routerx library.
 func JSON(responseWriter http.ResponseWriter, statusCode int, data any) {
 	responseWriter.Header().Set("Content-Type", "application/json; charset=utf-8")
 	responseWriter.WriteHeader(statusCode)

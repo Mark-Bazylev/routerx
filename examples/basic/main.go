@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	// Create router with logging middleware
+	// Create a router with logging middleware
 	router := routerx.New().
 		Use(LoggingMiddleware)
 
